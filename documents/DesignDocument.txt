@@ -1,0 +1,32 @@
+<Short Stay> Design Document
+Overview
+Internship and Co-op experiences are a key component of many degree programs offered at Northeastern University (NEU), but require relocation for a length of time shorter than that of a typical 12-month lease. Sublets are an affordable solution to these situations, but they can be difficult to find in an unfamiliar city and some listings can be fraudulent. The goal of Short Stay is to connect students at NEU who are looking to sublet their housing with other students looking to rent housing for a limited period of time. The user will be able to find affordable, safe housing from other students who may be experiencing a similar relocation situation.
+Goals
+* Allow a user with a northeastern.edu email account to post their housing to sublet
+* Allow users to search for housing that meets their needs
+   * Dates available, price, housing type, bedrooms, bathrooms, parking, pet allowance, furnished, etc.[a]
+* Allow users to subscribe to a search so that they are notified immediately when matching housing gets posted
+* Allow users to express interest in a posting so that they can be contacted later on
+
+Non-Goals
+* Direct messaging between the user and the student listing the housing
+* Listing/searching housing for purchase
+* Not for finding short-term lease housing
+* User can not see the information of student who listed sublet, can only be seen student email and gender(Male/Female)
+Risks
+Where do we store data?
+This project relies on an understanding of MongoDB to add data, query data, and view data in an efficient, clear manner. The development team has limited experience with databases, and have not worked with MongoDB.
+
+
+Legal risks
+No one on the team is familiar with real estate or potential legal risks related to topics of this nature.
+
+
+Mitigation: this is a student project and therefore unlikely to be used by anyone in a way that will attract legal attention. Some notes should still be made about potential issues when they come up (e.g. housing discrimination laws).
+Lack of existing data
+There might be not much data information about the sublet(API), need to find data individually 
+User Identity
+How do we prove that a user is actually a Northeastern student?
+
+
+Mitigation: for the purposes of this student project, you can simply note that no verification is done. Attempts to use duplicate email addresses should probably be blocked.

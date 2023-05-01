@@ -1,0 +1,25 @@
+A number of user stories - which are of the form "As a...I want...so that...which will"
+
+
+User story 1:
+As a user who will be in a different city for the summer, I want to be able to view summer sublet options in a different city based on apartment types so that I can decide quickly on housing without having to view housing that is not an option.
+
+
+User story 2:
+As a user who is trying to sublet my apartment, I want to be able to list my apartment with the dates it will be available so that I am only contacted by people through email who need to rent the apartment in the timeframe it will be available which will save me time from talking to people who cannot rent the apartment.
+
+
+User story 3:
+As a user who is trying to move to a different city due to participating in a NEU course that is only open in a different city, I want to see a new apartment that has a similar option as my current apartment. There are too many apartments to see on each different platform, so I want to see a simple list of apartments that match my preference. 
+
+
+User Story 4:
+As a user who wants to provide a sublet, I’d like to find out the average price of houses with similar options so that I can put my house on the market at a reasonable price without losing any money. 
+
+
+User Story 5:
+As a user who tries to go back to their country during winter vacation, I’d like to give sublet to a authorized person so that my room and furniture can be safe without being damage
+
+
+User Story 6:
+As a user who just got offered an internship in a different city, I liked to  find a sublet in good condition at a reasonable price without exceeding my income since the average price of short term leasing is much more expensive than sublet.

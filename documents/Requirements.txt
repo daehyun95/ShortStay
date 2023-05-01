@@ -1,0 +1,13 @@
+A number of requirements - i.e. what MUST your product do or not do - "Users MUST NOT be able to alter another user's orders"
+
+
+Requirements:
+1. User MUST be able to get information about sublet properties.
+2. User MUST be able to view images and information about a specific sublet.
+3. User MUST be a Northeastern Student
+4. User MUST be able to add a listing for sublet
+5. User MUST be able to return to the beginning of the chatbot options (cancel).
+6. User MUST  choose the features such as period of sublet, number of bedrooms, pricing, etc before getting information
+7. User MUST NOT able to see other’s information except the email address
+8. User MUST NOT able to message other students nor the request
+9. User MUST NOT choose anything that’s not given.

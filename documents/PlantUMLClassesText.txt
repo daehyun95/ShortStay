@@ -1,0 +1,103 @@
+@startuml
+
+skin rose
+
+title ShortStayBot Class Diagram
+
+class Student {
+  -String studentEmail
+  -String firstName
+  -String lastName
+  -String phoneNumber
+}
+
+class Users {
+  -String studentEmail
+}
+
+
+class Address {
+  -Integer propertyID
+  -String street
+  -String street2
+  -String city
+  -String state
+  -String zipCode
+}
+
+enum HousingType {
+  APARTMENT
+  CONDO
+  HOUSE
+}
+
+enum GenderPreference {
+  MALE
+  FEMALE
+  NONBINARY
+  NOPREFERENCE
+}
+
+class Property {
+  -Integer propertyID
+  -HousingType housingType
+  -Address address
+  -Double price
+  -Integer bedrooms
+  -Double bathrooms
+  -Double squareFeet
+  -Boolean hasParking
+  -Boolean petsOK
+  -Boolean isFurnished
+}
+
+class SubletListing {
+  -Integer subletListingID
+  -Property property
+  -Users userListing
+  -Date startDate
+  -Date endDate
+  -Boolean sharedHousing
+  -Integer roomMates
+  -GenderPreference genderPreference
+  -String subletListingDetails
+}
+
+SubletListing--*Users
+Users-->Student
+Property*--Address
+SubletListing--*Property
+Property--HousingType
+SubletListing--GenderPreference
+
+
+@startuml
+
+skin rose
+
+title "User-SSB Sequence Diagram"
+
+actor User
+boundary "Discord" as UI
+control "ShortStayBot" as SSB
+database "MongoDB" as DB
+
+User -> UI : To DiscordUI to find housing
+UI -> SSB : User commands /find
+SSB-->UI : Bot queries user for details
+UI-->SSB : Bot receives information from user
+SSB -> DB : Bot queries MongoDB for information
+SSB <- DB : Sublet information retrieved from database
+SSB->UI : Discord displays information
+UI -> User : User views options
+
+User -> UI : To DiscordUI to post housing
+UI -> SSB : User to selects /post to post sublet
+SSB-->UI : Bot queries user for details
+UI-->SSB : Bot receives information from user
+SSB -> UI : Bot displays confirmation
+UI -> User : User to review
+UI <- User : User confirms
+UI -> SSB : Bot received confirmation
+SSB -> DB : To database
+@enduml

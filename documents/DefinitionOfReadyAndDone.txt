@@ -1,0 +1,49 @@
+Definition of Ready
+
+
+
+
+Indicates a user story/backlog task is ready to be assigned and completed.
+Topic
+	Criteria
+	Design
+	* Design for the task is specified by the user story and is outlined in the backlog task.
+* Acceptance criteria has been outlined in the backlog task.
+* Design acceptance criteria is aligned with the basic layout as indicated by the draft discord embed builder in the google drive.
+	Code
+	* Acceptance criteria includes the specific classes and functions to be implemented.
+	Final task
+	* Task is assigned/claimed by a team member.
+	
+
+	
+
+	
+
+Definition of Done
+
+
+Criteria to indicate a user story/backlog task has been completed.
+Topic
+	Criteria
+	Design
+	* Design is consistent with any project diagrams.
+* Design is consistent with other classes and the example bot from the embed builder.
+* Design has been reviewed by another team member and approved.
+	Code
+	* All of the task’s functionality has been implemented in full.
+* Code functionality has been tested by the assignee and the reviewer.
+* Code has been approved by another team member.
+* Code passes all checks before merging with main.
+	Documentation
+	* Each class has a header with a brief description of the code.
+* Functions are commented completely.
+* Any additional comments are made in line.
+* Documentation has been reviewed by another team member.
+	Testing
+	* Unit testing has been completed for any functions added.
+* App can launch.
+* All checks pass.
+	Final task
+	* Code reviewed by another member, approved, and then merged with main branch.
+* If the purpose of that branch has been fulfilled, it will be deleted.
